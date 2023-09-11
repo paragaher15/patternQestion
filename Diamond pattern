@@ -1,0 +1,46 @@
+#include<iostream>
+using namespace std;
+int main(){
+    
+     int n;
+     //we enter the valur of n here 8
+     cout<<"ENter the value of n";
+     cin>>n;
+     for(int i=0;i<n;i++){
+         for(int col=0;col<i;col++){
+             cout<<" ";
+         }
+         for(int col=0;col<n-i;col++){
+             cout<<"* ";
+         }
+         cout<<endl;
+     }
+    for(int i=0;i<n;i++){
+        for(int col=0;col<n-i-1;col++){
+            cout<<" ";
+        }
+            for(int col=0;col<i+1;col++){
+                cout<<"* ";
+            }
+            cout<<endl;
+        
+    }
+    
+}
+output-
+* * * * * * * * 
+ * * * * * * * 
+  * * * * * * 
+   * * * * * 
+    * * * * 
+     * * * 
+      * * 
+       * 
+       * 
+      * * 
+     * * * 
+    * * * * 
+   * * * * * 
+  * * * * * * 
+ * * * * * * * 
+* * * * * * * * 
